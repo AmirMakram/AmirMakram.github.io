@@ -1,0 +1,235 @@
+html{
+    font-family: 'Oxygen', sans-serif ;
+    font-weight: 400 ;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #eee;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.logo{
+    width: 40px;
+    height: 60px;
+}
+.name{
+    font-weight: 700;
+}
+.right-side ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+header{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #7f8c8d;
+}
+/*rgb(161, 193, 235)*/
+.info-header{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+}
+.name-in-header{
+    font-size: 50px;
+    font-weight: 700;
+}
+.job-title{
+    font-weight: 300;
+    font-size: 20px;
+}
+.info-header p{
+    line-height: 1.6;
+}
+.email{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: auto;
+}
+.email-link{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b712;
+    border:1px solid #01a712;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.email-link:hover{
+    background-color: #01a712;
+    border:1px solid #00b712;
+
+}
+section{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.about-me .container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.about-me-body{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.cv-about{
+    color: #666;
+}
+.cv-about:hover{
+    text-decoration: underline;
+}
+h3{
+    font-weight: 700;
+    font-size: 40px;
+}
+.about-me-image{
+    width: 100%;
+}
+.about-me-image img{
+    max-width: 100%;
+    width: auto;
+}
+.about-me-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;;
+}
+.about-me-content p{
+    line-height: 1.6;
+}
+.social-me .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.social-me-body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:20px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.social img{
+    width: 20px;
+}
+.social a{
+    text-decoration: none;
+    color: #4472C4;
+}
+.social a:hover{
+    text-decoration: underline;
+}
+footer{
+    height: 200px;
+    background-color: #222;
+    color: #aaa;
+    padding-top: 50px;
+}
+.copy{
+    margin-top: 15px;;
+}
+.cv-footer{
+    display: inline-block;
+    margin-top: 20px;
+    color: #ccc;
+}
+.cv-footer:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width:700px) {
+    .container{
+        width: 80%;
+    }
+    header{
+        padding-top: 250px;
+        padding-bottom: 250px;
+        background-image: url("../images/Amir_Header2.png");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+        background-size: auto 700px;
+    }
+    .name-in-header{
+        color: #333;
+    }
+    .info-header p{
+        color: #fff;
+    }
+    section{
+        margin-top: 250px;
+        margin-bottom: 250px;
+    }
+    .info-header{
+        gap:10px;
+        align-items: flex-start;
+    }
+    .info-header p{
+        margin-top: 20px;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .about-me-body{
+        flex-direction: row;
+        align-items: center;
+    }
+    .about-me-content{
+        font-size:small;
+        font-weight: 400;
+    }
+    .about-me-image img{
+        max-width: unset;
+        max-height: 400px;
+        height: auto;
+    }
+
+}
+@media only screen and (min-width:900px){
+    .info-header p{
+        color: #fff;
+    }
+    .about-me-image img{
+        max-height: 500px;
+    }
+    .about-me-content{
+        font-size:large;
+    }
+    .social-me-body{
+        flex-direction: row;
+    }
+}
